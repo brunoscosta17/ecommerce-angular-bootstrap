@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./collection.component.sass']
 })
 export class CollectionComponent implements OnInit {
+
+  @Input() title: string = 'teste';
 
   constructor() { }
 
